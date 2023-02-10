@@ -1,0 +1,96 @@
+.main {
+  position: sti;
+  top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+.vishal{
+  color: blue;
+}
+.vishal :hover{
+  color: black;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+  color: blue;
+  font-size: 0.99em;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: black;
+}
+
+.header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid #f4f4f4;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.bttn {
+  background-color: blue;
+  padding: 0.75rem 1.5rem;
+  margin-right: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* .bttn{
+        margin-left: 50px;
+    } */
+}
+
+@media (max-width: 1025px) {
+  .bttn {
+    margin-left: 130px;
+  }
+}
